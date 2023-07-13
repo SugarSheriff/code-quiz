@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Online Quiz</title>
+</head>
+
+<body>
+    <header>
+        <a id="leaderboard-link">Highscores <i class="fas fa=hand-point-left fa-lg"></i>
+        </a>
+        <time>Time: <span id="time"></span></time>
+    </header>
+
+    <main>
+        <div id=start-card class="card">
+            <h2 id="title">Quiz!</h2>
+            <p>Answer these questions before time runs out! <br><br> Incorrect answers will result in time lost!</p>
+            <button id=start-button class="button">Start!</button>
+        </div>
+        
+        <div hidden id=question-card class="card">
+            <h2 id=question-text></h2>
+            <div id=quiz-options>
+                <botton id=option0 class="button option-button"></botton>
+                <botton id=option1 class="button option-button"></botton>
+                <botton id=option2 class="button option-button"></botton>
+                <botton id=option3 class="button option-button"></botton>
+            </div>
+            <div id=result-div>
+                <hr>
+                <p id=result-text></p>
+            </div>
+        </div>
+        <div hidden id=score-card class="card">
+            <h2>Time is up!</h2>
+            <p>Final Score:<span id=score></span></p>
+            <form class="inline-form" id="submission-form">
+                <label for="initials">Enter Your Initials:</label>
+                <input type="text" id="initials">
+                <button id="submit-button" class="button">Submit!</button>
+            </form>
+        </div>
+        <div hidden id=leaderboard-card class="card">
+            <h2>Highscores</h2>
+            <ol id="highscore-list"></ol>
+            <div class="inline-buttons">
+                <button id="back-button" class="button">Back!</button>
+                <button id="clear-button" class="button">Clear!</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
